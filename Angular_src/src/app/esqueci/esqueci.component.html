@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">                
+        <div class="col-lg-6 offset-lg-3">
+            <form (ngSubmit)="sendEmail()">
+                <div class="form-group">
+                  <label for="email">E-mail cadastrado</label>
+                  <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Digite seu e-mail cadastrado"  required>
+                </div>
+                <button class="btn btn-primary" type="submit" id="BtnLogin">Enviar</button>    
+              </form>
+        </div>
+    </div>
+  </div>

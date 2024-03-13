@@ -1,0 +1,258 @@
+/* You can add global styles to this file, and also import other style files */
+
+    *{
+    box-sizing: border-box;
+  }
+  
+  /*Navmenu*/
+  /* The navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color:#0d6efd;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    color: rgb(133, 0, 185);
+  }
+  
+  /*Estilo pagina Cesta*/
+  .cesta {
+    float: right;
+    margin: 10px 20px 10px 2px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: rgb(116, 0, 161);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icons-btn {
+    display: inline-block;
+    text-align: center; }
+    .icons-btn span {
+      display: block;
+      height: 40px;
+      width: 40px;
+      line-height: 40px; }
+      @media (max-width: 991.98px) {
+        .icons-btn span {
+          width: 24px; } }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  /* Estilo do logo */
+  .logo {
+    display: inline-block;
+    margin: 10px 0 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Botão de Log-in*/
+  .login-panel {
+    float: right;
+    margin: 10px 20px 10px 2px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: rgb(116, 0, 161);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo dos produtos */
+  .produto {
+    display: inline-block;
+    width: 220px;
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Tela Contato*/
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  
+  /*Produtos*/
+  .produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .produto h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .produto p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .produto .preco {
+    align-items: baseline;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /*Login*/
+  #login-form-wrap{
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+  }
+  #login-form-wrap label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  #login-form-wrap input[type="email"], #login-form-wrap input[type="password"] {
+      margin-bottom: 10px;
+      width: 250px;
+  }
+  #login-form-wrap input[type="submit"] {
+      margin-bottom: 15px;
+      display: inline-block;
+  }
+  
+  #register-form-wrap{
+      background: none repeat scroll 0 0 #f4f4f4;
+      margin-bottom: 30px;
+      padding: 25px;
+      width: auto;
+  }
+  
+  
+  /*Esqueci*/
+  .title-area {background-color: rgb(114, 239, 248);}
+  
+  .Etitle{
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+    position: fixed;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content:center; 
+    align-items:center;
+  }
+  
+   /* Footer */
+  .site-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(114, 239, 248);
+    color: white;
+    text-align: center;
+
+  }
+  
+  /* Centraliza os produtos para visualização móvel */
+  .row-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo de Pagamento */
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }

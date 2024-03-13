@@ -1,0 +1,6 @@
+<div class="user-details">
+    <ul>
+        <li><strong>ID:</strong> {{ IdUsuario }}</li>
+        <li><strong>Nome:</strong> {{ (nomeUsuario? nomeUsuario.length : 0) > 30 ? (nomeUsuario | slice:0:30) + '...' : nomeUsuario }}</li>
+    </ul>
+</div>

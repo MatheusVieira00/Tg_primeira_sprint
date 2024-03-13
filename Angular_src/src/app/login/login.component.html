@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row justify-content-center">                
+      <div class="col-md-6 col-sm-12">
+          <form id="login-form-wrap" class="login" method="post">
+              <h2>Acessar</h2>
+              
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" [(ngModel)]="this.model.email">
+              </div>
+
+              <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" [(ngModel)]="this.model.senha">
+              </div>
+
+              <div class="clear"></div>
+              <p class="form-row">
+                <button class="btn btn-primary" id="BtnLogin" (click)="carregar()"> Login</button>
+              </p>
+              <p class="lost_password">
+                  <a routerLink="/esqueci">Esqueceu a senha?</a>
+              </p>
+              <p class="new_account">
+                <a routerLink="/cadastro">Clique aqui para se cadastrar!</a>
+            </p>
+              <div class="clear"></div>
+          </form>                    
+      </div>
+      
+  </div>
+</div>
+<!--<script>
+  function validarCampos(){
+
+  if(!reg2.test(email.value)){
+  alert("Informe um email válido");
+  email.focus();
+  return false;
+}
+  if(!reg1.test(senha.value)){
+  alert("Senha inválida. Cheque a senha");
+  senha.focus();
+  return false;
+}
+else{
+  return true;
+}
+
+}
+
+function validarCamposR(){
+
+if(!reg2.test(emailR.value)){
+  alert("Informe um email válido");
+  emailR.focus();
+  return false;
+}
+if(!reg1.test(senhaR1.value||senhaR2.value)){
+  alert("Senha inválida. Cheque a senha!");
+  return false;
+}
+if(senhaR1.value!=senhaR2.value){
+  alert("Senhas não coincidem!");
+  return false;
+}
+else{
+  return true;
+}
+}
+</script>-->
